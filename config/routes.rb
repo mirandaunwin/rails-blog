@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :articles
+
   get 'simple_pages/currentroutine'
   get 'simple_pages/about'
   get 'simple_pages/contact'
