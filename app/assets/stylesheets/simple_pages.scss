@@ -3,15 +3,61 @@
   --light-color: hsla(0, 0%, 95%, 1); /* light grey */
   --dark-color: hsla(0, 0%, 10%, 1); /* almost black */
   --feature-color: hsla(47, 100%, 53%, 1); /* mustard yellow */
-  --clicked-color: hsla(0, 0%, 45%, 1);
+  --clicked-color: hsla(0, 0%, 45%, 1); /* middle grey */
 }
 
 body {
   font-family: var(--serif-font);
+  min-height: 100vh;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.navbar,
+.navbar a,
+.footer {
+  background-color: var(--dark-color);
+  color: var(--feature-color);
+  text-decoration: none;
+}
+
+.navbar {
+  font-size: 1.2em;
+}
+
+.navbar a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar a:hover {
+  color: var(--clicked-color);
+}
+
+.sidebar-img {
+  padding: 5px;
+  border: 5px solid;
+  border-color: var(--feature-color);
+  margin: 2px;
 }
 
 h1 {
   font-size: 3em;
+  color: var(--feature-color);
+}
+
+h2 {
+  font-size: 2em;
+  color: var(--feature-color);
+}
+
+h3 {
+  font-size: 2em;
+  color: var(--dark-color);
+}
+
+h4 {
+  font-size: 1.5em;
   color: var(--feature-color);
 }
 
@@ -21,4 +67,16 @@ a {
 
 a:hover {
   color: var(--clicked-color);
+}
+
+.routine a {
+  color: var(--dark-color);
+}
+
+.disclaimer {
+  font-size: 0.8em;
+}
+
+.footer span {
+  font-size: 0.8em;
 }

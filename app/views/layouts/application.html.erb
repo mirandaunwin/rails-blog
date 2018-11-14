@@ -24,31 +24,51 @@
 
   <body>
 
-    <nav>
-      <ul>
-        <li><%= link_to content_tag(
-        :i,
-        nil,
-        class: 'fas fa-home'), root_path %></li>
-        <li><%= link_to content_tag(
-        :i,
-        nil,
-        class: 'far fa-user-circle'), simple_pages_about_path %></li>
-        <li><%= link_to content_tag(
-        :i,
-        nil,
-        class: 'fas fa-at'), simple_pages_contact_path %></li>
-        <li><%= link_to content_tag(
-        :i,
-        nil,
-        class: 'fab fa-instagram'), "https://www.instagram.com/mirandaeliseblog", :target => "_blank" %></li>
-      </ul>
+    <nav class="navbar fixed-top navbar-expand-lg justify-content-center">
+      <%= link_to content_tag(:i, nil, class: 'fas fa-home'), root_path %>
+      <%= link_to content_tag(:i, nil, class: 'far fa-user-circle'), simple_pages_about_path %>
+      <%= link_to content_tag(:i, nil, class: 'fas fa-at'), simple_pages_contact_path %>
+      <%= link_to content_tag(:i, nil, class: 'fab fa-instagram'), "https://www.instagram.com/mirandaeliseblog", :target => "_blank" %>
     </nav>
 
-    <%= yield %>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 px-1 text-center" id="sticky-sidebar">
+          <%= image_tag("miranda elise.png", class: "img-fluid sidebar-img") %>
+          <h4>SKINCARE - MAKEUP - TRAVEL</h4>
+          <p>Welcome to my blog! The focus is definitely on skincare, but I also post about makeup and sometimes even travel.</p>
+          <p>Click <%= link_to "here", simple_pages_currentroutine_path %> to see my current routine</p>
+          <h2>SUBSCRIBE</h2>
+          <p>*insert mailing list box here*<p>
+          <div>
+            <h2>ARCHIVE</h2>
+            <p>*insert archive of posts here*</p>
+            <p>November 2018+</p>
+            <p>October 2018+</p>
+            <p>September 2018+</p>
+            <p>August 2018+</p>
+            <p>etc etc</p>
+          </div>
+          <div>
+            <h2>POPULAR POSTS</h2>
+          </div>
+          <div>
+            <h2>TAGS</h2>
+          </div>
+        </div>
 
-    <footer>
-      &copy; 2018 Miranda Unwin
+        <div class="col" id="main">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="footer fixed-bottom">
+      <div class="container text-center">
+        <span>&copy; 2018 Miranda Unwin</span>
+      </div>
     </footer>
 
   </body>
