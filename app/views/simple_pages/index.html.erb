@@ -1,2 +1,16 @@
-<h1>Miranda Elise</h1>
-<h3>A blog mostly about skincare</h3>
+<div class="container text-center">
+  <h1>Miranda Elise</h1>
+  <h3>A blog mostly about skincare</h3>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <%= render @articles %>
+  </div>
+  <div class="text-center"><%= link_to 'View all', articles_path %>
+  </div>
+</div>
+
+<div class="new-article text-center">
+  <h5><%= link_to 'New Post', new_article_path %></h5>
+</div>

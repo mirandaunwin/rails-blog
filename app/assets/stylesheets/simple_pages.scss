@@ -58,10 +58,13 @@ h3 {
 
 h4 {
   font-size: 1.5em;
-  color: var(--feature-color);
+  color: var(--dark-color);
 }
 
-
+h5 {
+  font-size: 1.5em;
+  color: var(--feature-color);
+}
 
 a {
   color: var(--feature-color);
@@ -71,8 +74,21 @@ a:hover {
   color: var(--clicked-color);
 }
 
-.routine a {
+.routine a,
+.article-container a {
   color: var(--dark-color);
+}
+
+.article-container {
+  padding: 10px;
+}
+
+.article-text {
+  font-size: 1.2em;
+}
+
+.new-article {
+  margin: 10px;
 }
 
 .disclaimer {

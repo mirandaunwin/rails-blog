@@ -25,7 +25,7 @@
   <body>
 
     <nav class="navbar fixed-top navbar-expand-lg justify-content-center">
-      <%= link_to content_tag(:i, nil, class: 'fas fa-home'), root_path %>
+      <%= link_to "Home", root_path %>
       <%= link_to content_tag(:i, nil, class: 'far fa-user-circle'), simple_pages_about_path %>
       <%= link_to content_tag(:i, nil, class: 'fas fa-at'), simple_pages_contact_path %>
       <%= link_to content_tag(:i, nil, class: 'fab fa-instagram'), "https://www.instagram.com/mirandaeliseblog", :target => "_blank" %>
@@ -35,7 +35,7 @@
       <div class="row">
         <div class="col-3 px-1 text-center sticky-sidebar d-none d-sm-block">
           <%= image_tag("miranda elise.png", class: "img-fluid sidebar-img") %>
-          <h4>SKINCARE - MAKEUP - TRAVEL</h4>
+          <h5>SKINCARE - MAKEUP - TRAVEL</h5>
           <p>Welcome to my blog! The focus is definitely on skincare, but I also post about makeup and sometimes even travel.</p>
           <p>Click <%= link_to "here", simple_pages_currentroutine_path %> to see my current routine</p>
           <h2>SUBSCRIBE</h2>
