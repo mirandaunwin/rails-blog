@@ -1,3 +1,24 @@
-// Place all the styles related to the simple_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+:root {
+  --serif-font: 'Dosis', Helvetica, Arial, sans-serif;
+  --light-color: hsla(0, 0%, 95%, 1); /* light grey */
+  --dark-color: hsla(0, 0%, 10%, 1); /* almost black */
+  --feature-color: hsla(47, 100%, 53%, 1); /* mustard yellow */
+  --clicked-color: hsla(0, 0%, 45%, 1);
+}
+
+body {
+  font-family: var(--serif-font);
+}
+
+h1 {
+  font-size: 3em;
+  color: var(--feature-color);
+}
+
+a {
+  color: var(--feature-color);
+}
+
+a:hover {
+  color: var(--clicked-color);
+}
