@@ -25,7 +25,7 @@
   <body>
 
     <nav class="navbar fixed-top navbar-expand-lg">
-      <div class="col-xs-12 col-md-9 offset-md-3 text-center">
+      <div class="col-xs-12 col-sm-9 offset-sm-3 text-center">
         <%= link_to content_tag(:i, nil, class: 'fas fa-home'), root_path %>
         <%= link_to content_tag(:i, nil, class: 'far fa-user-circle'), simple_pages_about_path %>
         <%= link_to content_tag(:i, nil, class: 'fas fa-at'), simple_pages_contact_path %>
@@ -35,8 +35,8 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-3 px-1 text-center sticky-sidebar d-none d-sm-block">
-          <%= image_tag("miranda elise.png", class: "img-fluid sidebar-img") %>
+        <div class="col-3 px-1 sticky-sidebar text-center d-none d-sm-block">
+          <%= image_tag("miranda elise.jpg", class: "img-fluid sidebar-img") %>
           <h5>SKINCARE - MAKEUP - TRAVEL</h5>
           <p>Welcome to my blog! The focus is definitely on skincare, but I also post about makeup and sometimes even travel.</p>
           <p>Click <%= link_to "here", simple_pages_currentroutine_path %> to see my current routine</p>

@@ -34,7 +34,12 @@ body {
   color: var(--clicked-color);
 }
 
-.sidebar-img {
+.sticky-sidebar {
+  margin-top: 5px;
+}
+
+.sidebar-img,
+.article-img {
   padding: 5px;
   border: 5px solid;
   border-color: var(--feature-color);
@@ -57,8 +62,9 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: var(--dark-color);
+  font-weight: 900;
 }
 
 h5 {
@@ -79,16 +85,24 @@ a:hover {
   color: var(--dark-color);
 }
 
-.article-container {
+.article-container,
+.about-container {
   padding: 10px;
 }
 
 .article-text {
   font-size: 1.2em;
+  padding-top: 10px;
 }
 
-.new-article {
-  margin: 10px;
+.article-img {
+  max-width: 65%;
+}
+
+@media (max-width:991px) {
+  .article-img {
+    max-width: 90%;
+  }
 }
 
 .disclaimer {
