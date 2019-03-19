@@ -35,7 +35,10 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-3 px-1 sticky-sidebar text-center d-none d-sm-block">
+        <div class="col order-1 order-sm-2" id="main">
+          <%= yield %>
+        </div>
+        <div class="col-3 px-1 sticky-sidebar text-center order-2 order-sm-1">
           <%= image_tag("miranda elise.jpg", class: "img-fluid sidebar-img") %>
           <h5>SKINCARE - MAKEUP - TRAVEL</h5>
           <p>Welcome to my blog! The focus is definitely on skincare, but I also post about makeup and sometimes even travel.</p>
@@ -59,9 +62,6 @@
           </div>
         </div>
 
-        <div class="col" id="main">
-          <%= yield %>
-        </div>
       </div>
     </div>
 
